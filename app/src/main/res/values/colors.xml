@@ -1,0 +1,7 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green_bank">#4CAF50</color>
+    <color name="green_bank_dark">#388E3C</color>
+    <color name="green_bank_light">#C8E6C9</color>
+</resources>

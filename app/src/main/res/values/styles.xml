@@ -1,0 +1,7 @@
+<resources>
+    <style name="Widget.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="backgroundColor">@color/green_bank</item>
+    </style>
+</resources>

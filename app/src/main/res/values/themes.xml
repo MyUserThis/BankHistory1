@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.BankHistory" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/green_bank</item>
+        <item name="colorPrimaryVariant">@color/green_bank_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_bank_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/green_bank_dark</item>
+        <item name="materialCalendarTheme">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigation</item>
+    </style>
+</resources>
