@@ -1,0 +1,81 @@
+-- Вставка типов операций в таблицу OperationTypes
+INSERT INTO OperationTypes (TypeName) VALUES ('Пополнение с банкомата');
+INSERT INTO OperationTypes (TypeName) VALUES ('Снятие с банкомата');
+INSERT INTO OperationTypes (TypeName) VALUES ('Перевод по номеру карты');
+INSERT INTO OperationTypes (TypeName) VALUES ('Перевод по номеру телефона');
+INSERT INTO OperationTypes (TypeName) VALUES ('Оплата услуг');
+INSERT INTO OperationTypes (TypeName) VALUES ('Оплата товаров');
+INSERT INTO OperationTypes (TypeName) VALUES ('Вложение');
+
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('ATM #1234', 15000, 1, 'Приход', 'ATM #1234', '2024-04-01', '10:00:00', 'Пополнение с банкомата');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Андреев А.Н.', 5000, 7, 'Приход', '4444 1111 2222 3333', '2024-04-01', '12:30:00', 'Зачисление за продажу велосипеда');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Пятёрочка', 1200, 6, 'Расход', '5555 6666 7777 8888', '2024-04-02', '15:45:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Кузнецова Е.М.', 3000, 3, 'Расход', '6666 7777 8888 9999', '2024-04-04', '09:00:00', 'Перевод на карту Кузнецовой Е.М.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Ростелеком', 800, 5, 'Расход', '7777 8888 9999 0000', '2024-04-04', '17:30:00', 'Оплата интернета');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Fix Price', 500, 6, 'Расход', '8888 9999 0000 1111', '2024-04-05', '13:20:00', 'Покупка товаров');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Смирнова И.И.', 2500, 4, 'Расход', '+7 (996) 123-45-67', '2024-04-05', '11:15:00', 'Перевод на карту Смирновой И.И.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Лента', 2000, 6, 'Расход', '9999 0000 1111 2222', '2024-04-05', '18:40:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Дмитриев П.С.', 4000, 3, 'Приход', '2222 3333 4444 5555', '2024-04-09', '14:55:00', 'Зачисление от друга');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Яндекс Такси', 300, 5, 'Расход', '1111 2222 3333 4444', '2024-04-11', '08:30:00', 'Оплата поездки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Проект "Инвест"', 5000, 7, 'Расход', '3333 4444 5555 6666', '2024-04-11', '16:20:00', 'Инвестиция в проект');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('ATM #5678', 10000, 1, 'Приход', 'ATM #5678', '2024-04-12', '09:45:00', 'Пополнение с банкомата');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Перекресток', 1500, 6, 'Расход', '4444 5555 6666 7777', '2024-04-12', '19:10:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Netflix', 700, 5, 'Расход', '5555 6666 7777 8888', '2024-04-14', '20:00:00', 'Оплата подписки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Мельникова А.А.', 3500, 4, 'Расход', '+7 (915) 654-32-10', '2024-04-15', '12:25:00', 'Перевод на карту Мельниковой А.А.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Магнит', 1000, 6, 'Расход', '6666 7777 8888 9999', '2024-04-15', '10:35:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Зайцев А.В.', 6000, 3, 'Приход', '7777 8888 9999 0000', '2024-04-18', '14:00:00', 'Перевод от коллеги');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Мегафон', 500, 5, 'Расход', '8888 9999 0000 1111', '2024-04-18', '09:50:00', 'Оплата мобильной связи');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Дикси', 800, 6, 'Расход', '9999 0000 1111 2222', '2024-04-19', '19:45:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Павлова О.Б.', 4500, 3, 'Расход', '1111 2222 3333 4444', '2024-04-20', '15:10:00', 'Перевод на карту Павловой О.Б.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Компания "Работа"', 30000, 7, 'Приход', '2222 3333 4444 5555', '2024-04-20', '09:00:00', 'Зачисление заработной платы');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Дом.Ру', 900, 5, 'Расход', '3333 4444 5555 6666', '2024-04-20', '18:20:00', 'Оплата интернета');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Лента', 2500, 6, 'Расход', '4444 5555 6666 7777', '2024-04-21', '13:55:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Васильева Н.И.', 7000, 4, 'Расход', '+7 (929) 876-54-32', '2024-04-24', '11:45:00', 'Перевод на карту Васильевой Н.И.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('IVI', 600, 5, 'Расход', '5555 6666 7777 8888', '2024-04-24', '20:30:00', 'Оплата подписки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Григорьев И.В.', 4500, 3, 'Приход', '6666 7777 8888 9999', '2024-04-26', '14:00:00', 'Перевод от друга');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Перекресток', 1800, 6, 'Расход', '7777 8888 9999 0000', '2024-04-26', '19:20:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('YouTube Premium', 1500, 5, 'Расход', '8888 9999 0000 1111', '2024-04-28', '21:00:00', 'Оплата подписки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Семенов Д.Г.', 5000, 3, 'Расход', '9999 0000 1111 2222', '2024-04-29', '10:30:00', 'Перевод на карту Семенова Д.Г.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Spotify', 800, 5, 'Расход', '1111 2222 3333 4444', '2024-04-30', '23:30:00', 'Оплата подписки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Лента', 2200, 6, 'Расход', '2222 3333 4444 5555', '2024-05-01', '16:45:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Михеева Т.Р.', 3500, 4, 'Расход', '+7 (924) 567-89-01', '2024-05-01', '12:30:00', 'Перевод на карту Михеевой Т.Р.');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('ATM #7890', 7000, 1, 'Приход', 'ATM #7890', '2024-05-02', '11:20:00', 'Пополнение с банкомата');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Пятёрочка', 1300, 6, 'Расход', '3333 4444 5555 6666', '2024-05-02', '19:55:00', 'Покупка продуктов');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Ozon Premium', 1000, 5, 'Расход', '4444 5555 6666 7777', '2024-05-02', '21:10:00', 'Оплата подписки');
+INSERT INTO Transactions (AccName, Amount, TransactionTypeID, Direction, Requisites, Date, Time, Description)
+VALUES ('Кириллов А.Ю.', 5000, 3, 'Расход', '5555 6666 7777 8888', '2024-05-03', '15:50:00', 'Перевод на карту Кириллова А.Ю.');

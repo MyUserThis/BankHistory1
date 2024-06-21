@@ -1,0 +1,17 @@
+CREATE TABLE OperationTypes (
+    ID INTEGER PRIMARY KEY,
+    TypeName TEXT NOT NULL
+);
+
+CREATE TABLE Transactions (
+    ID INTEGER PRIMARY KEY,
+	AccName TEXT,
+    Amount REAL NOT NULL,
+    TransactionTypeID INTEGER NOT NULL,
+    Direction TEXT NOT NULL,
+    Requisites TEXT,
+    Date DATE NOT NULL,
+    Time TIME NOT NULL,
+    Description TEXT,
+    FOREIGN KEY (TransactionTypeID) REFERENCES OperationTypes(ID)
+);
